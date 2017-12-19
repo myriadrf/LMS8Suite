@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////
-// C++ code generated with wxFormBuilder (version Jun  5 2014)
+// C++ code generated with wxFormBuilder (version Jun 17 2015)
 // http://www.wxformbuilder.org/
 //
 // PLEASE DO "NOT" EDIT THIS FILE!
@@ -20,11 +20,10 @@
 #include <wx/sizer.h>
 #include <wx/button.h>
 #include <wx/dialog.h>
-#include <wx/checkbox.h>
 #include <wx/textctrl.h>
-#include <wx/statbox.h>
-#include <wx/grid.h>
+#include <wx/checkbox.h>
 #include <wx/panel.h>
+#include <wx/statbox.h>
 #include <wx/frame.h>
 #include <wx/radiobox.h>
 
@@ -83,102 +82,6 @@ class dlgConnectionSettingsLMS7_view : public wxDialog
 		
 		dlgConnectionSettingsLMS7_view( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Connection Settings LMS7"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxDEFAULT_DIALOG_STYLE ); 
 		~dlgConnectionSettingsLMS7_view();
-	
-};
-
-///////////////////////////////////////////////////////////////////////////////
-/// Class dlgMeasurements_view
-///////////////////////////////////////////////////////////////////////////////
-class dlgMeasurements_view : public wxDialog 
-{
-	private:
-	
-	protected:
-		wxStaticText* m_staticText403;
-		wxStaticText* m_staticText413;
-		wxStaticText* m_staticText423;
-		wxStaticText* m_staticText433;
-		wxStaticText* m_staticText442;
-		wxCheckBox* chkLMS7FreqEnable;
-		wxStaticText* m_staticText83;
-		wxTextCtrl* txtLMS7FreqMin;
-		wxTextCtrl* txtLMS7FreqMax;
-		wxTextCtrl* txtLMS7FreqStep;
-		wxButton* btnLMS7Connect;
-		wxStaticText* m_staticText402;
-		wxStaticText* m_staticText412;
-		wxStaticText* m_staticText422;
-		wxStaticText* m_staticText432;
-		wxStaticText* m_staticText441;
-		wxCheckBox* chkLMS7ParEnable1;
-		wxTextCtrl* txtLMS7ParField1;
-		wxTextCtrl* txtLMS7ParMin1;
-		wxTextCtrl* txtLMS7ParMax1;
-		wxTextCtrl* txtLMS7ParStep1;
-		wxStaticText* ID_STATICTEXT2;
-		wxTextCtrl* txtLMSreadAddr;
-		wxButton* btnLMSread;
-		wxStaticText* ID_STATICTEXT3;
-		wxStaticText* lblLMSreadValue;
-		wxStaticText* ID_STATICTEXT7;
-		wxStaticText* lblLMSreadStatus;
-		wxButton* ID_BUTTON23;
-		wxCheckBox* ID_CHECKBOX5;
-		wxStaticText* m_staticText40;
-		wxStaticText* m_staticText41;
-		wxStaticText* m_staticText42;
-		wxStaticText* m_staticText43;
-		wxStaticText* m_staticText44;
-		wxCheckBox* chkParEnable1;
-		wxTextCtrl* txtParField1;
-		wxTextCtrl* txtParMin1;
-		wxTextCtrl* txtParMax1;
-		wxTextCtrl* txtParStep1;
-		wxCheckBox* chkParEnable2;
-		wxTextCtrl* txtParField2;
-		wxTextCtrl* txtParMin2;
-		wxTextCtrl* txtParMax2;
-		wxTextCtrl* txtParStep2;
-		wxStaticText* m_staticText421;
-		wxStaticText* m_staticText431;
-		wxStaticText* m_staticText39;
-		wxStaticText* m_staticText401;
-		wxStaticText* m_staticText411;
-		wxStaticText* m_staticText4111;
-		wxStaticText* m_staticText41111;
-		wxCheckBox* chkMeasFindPeakEnable;
-		wxStaticText* m_staticText38;
-		wxTextCtrl* txtMeasFindPeakStartFreq;
-		wxTextCtrl* txtMeasFindPeakStartSpan;
-		wxTextCtrl* txtMeasFindPeakStopSpan;
-		wxCheckBox* chkMeasUseBandMarker;
-		wxTextCtrl* txtMeasBandMarkerBand;
-		wxButton* btnMeasure;
-		wxButton* btnStop;
-		wxButton* btnLoadSetup;
-		wxButton* btnSaveSetup;
-		wxTextCtrl* txtField_log;
-		wxGrid* gridMeasResults;
-		wxButton* btnMeasSaveAsCSV;
-		wxStaticText* lblStatusLabel;
-		wxStaticText* lblStatus;
-		
-		// Virtual event handlers, overide them in your derived class
-		virtual void OnDlgMeasurementsClose( wxCloseEvent& event ) { event.Skip(); }
-		virtual void OnLMS7Connect( wxCommandEvent& event ) { event.Skip(); }
-		virtual void onLMS7read( wxCommandEvent& event ) { event.Skip(); }
-		virtual void OnUpdateUIChkMeasUseBandMarker( wxUpdateUIEvent& event ) { event.Skip(); }
-		virtual void onMeasMeasure( wxCommandEvent& event ) { event.Skip(); }
-		virtual void onMeasStop( wxCommandEvent& event ) { event.Skip(); }
-		virtual void onMeasLoadSetup( wxCommandEvent& event ) { event.Skip(); }
-		virtual void onMeasSaveSetup( wxCommandEvent& event ) { event.Skip(); }
-		virtual void onMeasSaveAsCSV( wxCommandEvent& event ) { event.Skip(); }
-		
-	
-	public:
-		
-		dlgMeasurements_view( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Measurements"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxDEFAULT_DIALOG_STYLE ); 
-		~dlgMeasurements_view();
 	
 };
 

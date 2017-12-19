@@ -32,8 +32,6 @@ add_subdirectory(ADF4002)
 include_directories(ADF4002) 
 add_subdirectory(Si5351C)
 include_directories(Si5351C)
-add_subdirectory(measurements)
-include_directories(measurements)
 
 set(BINARY_OUTPUT_DIR "${CMAKE_BINARY_DIR}/bin")
 
@@ -74,7 +72,6 @@ target_link_libraries(
 	LMS8001 
 	utilities_gui 	
 	lms8suiteEvents 
-	measurements
 	${CYAPI_LIBRARIES}
 	${wxWidgets_LIBRARIES}
 	)

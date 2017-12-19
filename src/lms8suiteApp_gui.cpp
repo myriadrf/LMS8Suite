@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////
-// C++ code generated with wxFormBuilder (version Jun  5 2014)
+// C++ code generated with wxFormBuilder (version Jun 17 2015)
 // http://www.wxformbuilder.org/
 //
 // PLEASE DO "NOT" EDIT THIS FILE!
@@ -68,10 +68,6 @@ AppFrame_view::AppFrame_view( wxWindow* parent, wxWindowID id, const wxString& t
 	mnuGPIO = new wxMenuItem( mnuModules, wxID_ANY, wxString( wxT("GPIO") ) , wxEmptyString, wxITEM_NORMAL );
 	mnuModules->Append( mnuGPIO );
 	
-	wxMenuItem* mnuMeasurements;
-	mnuMeasurements = new wxMenuItem( mnuModules, wxID_ANY, wxString( wxT("Measurements") ) , wxEmptyString, wxITEM_NORMAL );
-	mnuModules->Append( mnuMeasurements );
-	
 	mbar->Append( mnuModules, wxT("Modules") ); 
 	
 	this->SetMenuBar( mbar );
@@ -101,7 +97,6 @@ AppFrame_view::AppFrame_view( wxWindow* parent, wxWindowID id, const wxString& t
 	this->Connect( mnuDeviceInfo->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( AppFrame_view::OnShowDeviceInfo ) );
 	this->Connect( mnuSPI->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( AppFrame_view::OnShowSPI ) );
 	this->Connect( mnuGPIO->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( AppFrame_view::OnShowGPIO ) );
-	this->Connect( mnuMeasurements->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( AppFrame_view::OnShowMeasurements ) );
 }
 
 AppFrame_view::~AppFrame_view()
@@ -116,7 +111,6 @@ AppFrame_view::~AppFrame_view()
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( AppFrame_view::OnShowDeviceInfo ) );
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( AppFrame_view::OnShowSPI ) );
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( AppFrame_view::OnShowGPIO ) );
-	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( AppFrame_view::OnShowMeasurements ) );
 	
 }
 

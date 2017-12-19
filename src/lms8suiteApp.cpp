@@ -21,15 +21,16 @@
 #include <wx/splash.h>
 #include <iostream>
  //msavic 151106
- /*
+/**/
  #ifndef NDEBUG
  IMPLEMENT_APP_CONSOLE(lms8suiteApp);
  #else
  IMPLEMENT_APP(lms8suiteApp);
  #endif
- */
+ 
 
  //msavic 151106 {
+/*
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE prevInstance, LPWSTR lpCmdLine, int nShowCmd)
 {
 	char *buf;
@@ -44,6 +45,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE prevInstance, LPWSTR lpCmdLin
 
 	wxEntryCleanup();
 }
+*/
 //msavic 151106 }
 
 

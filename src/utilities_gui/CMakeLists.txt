@@ -23,10 +23,6 @@ set(tempcalibrate_gui_src_files
 	dlgTempCalibrate.cpp
 )
 
-set(measurements_gui_src_files	
-	dlgMeasurements.cpp
-)
-
 set(connectionManagerLMS7_gui_src_files	
 	dlgConnectionSettingsLMS7.cpp
 )

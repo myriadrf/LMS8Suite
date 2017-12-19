@@ -173,7 +173,7 @@
                         <event name="OnUpdateUI"></event>
                     </object>
                 </object>
-                <object class="wxMenu" expanded="0">
+                <object class="wxMenu" expanded="1">
                     <property name="label">&amp;Help</property>
                     <property name="name">helpMenu</property>
                     <property name="permission">protected</property>
@@ -270,21 +270,6 @@
                         <property name="shortcut"></property>
                         <property name="unchecked_bitmap"></property>
                         <event name="OnMenuSelection">OnShowGPIO</event>
-                        <event name="OnUpdateUI"></event>
-                    </object>
-                    <object class="wxMenuItem" expanded="1">
-                        <property name="bitmap"></property>
-                        <property name="checked">0</property>
-                        <property name="enabled">1</property>
-                        <property name="help"></property>
-                        <property name="id">wxID_ANY</property>
-                        <property name="kind">wxITEM_NORMAL</property>
-                        <property name="label">Measurements</property>
-                        <property name="name">mnuMeasurements</property>
-                        <property name="permission">none</property>
-                        <property name="shortcut"></property>
-                        <property name="unchecked_bitmap"></property>
-                        <event name="OnMenuSelection">OnShowMeasurements</event>
                         <event name="OnUpdateUI"></event>
                     </object>
                 </object>

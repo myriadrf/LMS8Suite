@@ -27,7 +27,6 @@
 #include "GPIO_wxgui.h"
 #include <wx/string.h>
 #include "dlgDeviceInfo.h"
-#include "dlgMeasurements.h"
 #include <functional>
 
 //#include "lms8001_pnlTRF_view.h"
@@ -152,7 +151,6 @@ LMS8SuiteAppFrame::LMS8SuiteAppFrame( wxWindow* parent ) : AppFrame_view( parent
     spi = nullptr;
 	gpio = nullptr;
 //    novenaGui = nullptr;
-	measurements = nullptr;
 
     lms8controlPort = new LMScomms();
 //    streamBoardPort = new LMScomms();
@@ -324,25 +322,6 @@ void LMS8SuiteAppFrame::OnShowDeviceInfo(wxCommandEvent& event)
 		deviceInfo->Connect(wxEVT_CLOSE_WINDOW, wxCloseEventHandler(LMS8SuiteAppFrame::OnDeviceInfoClose), NULL, this);
 		deviceInfo->Show();
 	}
-}
-
-void LMS8SuiteAppFrame::OnShowMeasurements(wxCommandEvent& event)
-{
-	if (measurements) //it's already opened
-		measurements->Show();
-	else
-	{
-		measurements = new dlgMeasurements(this, wxNewId(), _("Measurements"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE);
-		measurements->Initialize(lms8controlPort, lmsControl);
-		measurements->Connect(wxEVT_CLOSE_WINDOW, wxCloseEventHandler(LMS8SuiteAppFrame::OnMeasurementsClose), NULL, this);
-		measurements->Show();
-	}
-}
-
-void LMS8SuiteAppFrame::OnMeasurementsClose(wxCloseEvent& event)
-{
-	measurements->Destroy();
-	measurements = nullptr;
 }
 
 void LMS8SuiteAppFrame::OnSPIClose(wxCloseEvent& event)

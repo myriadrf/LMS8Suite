@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////
-// C++ code generated with wxFormBuilder (version Jun  5 2014)
+// C++ code generated with wxFormBuilder (version Jun 17 2015)
 // http://www.wxformbuilder.org/
 //
 // PLEASE DO "NOT" EDIT THIS FILE!
@@ -65,7 +65,6 @@ class AppFrame_view : public wxFrame
 		virtual void OnShowDeviceInfo( wxCommandEvent& event ) { event.Skip(); }
 		virtual void OnShowSPI( wxCommandEvent& event ) { event.Skip(); }
 		virtual void OnShowGPIO( wxCommandEvent& event ) { event.Skip(); }
-		virtual void OnShowMeasurements( wxCommandEvent& event ) { event.Skip(); }
 		
 	
 	public:

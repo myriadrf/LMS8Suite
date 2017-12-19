@@ -26,7 +26,6 @@ class Si5351C_wxgui;
 class dlgDeviceInfo;
 class SPI_wxgui;
 class GPIO_wxgui;
-class dlgMeasurements;
 
 //class LMS7002M_Novena_wxgui;
 
@@ -101,7 +100,6 @@ class LMS8SuiteAppFrame : public AppFrame_view
         dlgDeviceInfo* deviceInfo;
         SPI_wxgui* spi;
 		GPIO_wxgui* gpio;
-		dlgMeasurements* measurements;
 //        LMS7002M_Novena_wxgui* novenaGui;
 };
 

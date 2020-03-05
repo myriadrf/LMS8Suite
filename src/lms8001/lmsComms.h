@@ -7,6 +7,7 @@
 #ifndef LMS_COMMS_H
 #define LMS_COMMS_H
 
+#include <functional>
 #include "lms8001_defines.h"
 #include "connectionManager/ConnectionManager.h"
 #include <string.h>

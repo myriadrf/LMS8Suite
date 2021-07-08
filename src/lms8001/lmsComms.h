@@ -12,6 +12,7 @@
 #include "connectionManager/ConnectionManager.h"
 #include <string.h>
 #include <mutex>
+#include <functional>
 
 struct LMSinfo
 {
